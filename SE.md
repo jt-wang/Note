@@ -56,9 +56,21 @@
 ##### 螺旋模型（The Spiral Model）
 ![The spiral model](./SE/The spiral model.png)
 
+### 统一过程（the Unified Process）
+![the Unified Process](./SE/the Unified Process.png)
+
 ### 敏捷过程（Agile Process）
 #### 极限编程（Extreme Programming (XP)）
 ![The Extreme Programming process](./SE/The Extreme Programming process.png)
+#### 其他敏捷过程模型
+- 自适应软件开发（Adaptive Software Development (ASD)）
+- Scrum
+- 动态系统开发方法（Dynamic Systems Development Method (DSDM)）
+- Crystal
+- 特征驱动开发（Feature Driven Development (FDD)）
+- 精益软件开发（Lean Software Development (LSD)）
+- 敏捷建模（Agile Modeling (AM)）
+- 敏捷统一过程（Agile Unified Process (AUP)）
 
 ## 软件工程实践（Software Engineering Practice）
 定义：实践就是软件工程师每天使用的概念、原则、方法和开发工具的集合。
@@ -121,5 +133,24 @@
 定义：软件设计包括一系列原理、概念和实践，可以指导高质量的系统或产品开发。
 ![Requirements Model & Design Model](./SE/Requirements Model & Design Model.png)
 
-#### 设计过程（The Design Process）
-1. 
+#### 设计概念
+- 抽象（Abstraction）:过程抽象、数据抽象
+- 体系结构（Architecture）
+- 模式（Patterns）
+- 关注点分离（Separation of Concerns）
+- 模块化（Modularity）
+- 信息隐蔽（Information Hiding）
+- 功能独立（Functional Independence）：内聚性（cohesion，某个模块相关功能的强度）、耦合性（coupling，模块间的相互依赖性）
+- 求精（Refinement）：细化
+- 方面（Aspects）：横切系统需求方面的考虑；一个方面即一个模块
+- 重构（Refactoring）
+- 面向对象的设计概念（Object-Oriented Design Concepts）
+- 设计类（Design Classes）：用户接口类（User interface classes）、业务域类（Business domain classes）、过程类（Process classes）、持久类（Persistent classes）、系统类（System classes）；完整性与充分性、原始性、高内聚性、低耦合性
+
+#### 设计模型
+![Dimensions of the design model](./SE/Dimensions of the design model.png)
+- 数据设计元素
+- 体系结构设计元素：来自于应用域（application domain）、需求模型和模式与风格的分类（available catalogs for patterns and styles）
+- 接口设计元素：用户界面（user interface）；和其他系统、设备、网络或其他信息生成者或使用者的外部接口；各种设计构件之间的内部接口
+- 构件级设计元素
+- 部署级设计元素
