@@ -1,0 +1,5 @@
+# This is an annotation
+# Ignore following files
+./UML/UML.mindnode
+./UML/StarUML
+.DS_Store
