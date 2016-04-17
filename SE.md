@@ -34,7 +34,7 @@
         * [Web应用的需求建模](#web%E5%BA%94%E7%94%A8%E7%9A%84%E9%9C%80%E6%B1%82%E5%BB%BA%E6%A8%A1)
       * [设计（Design）](#%E8%AE%BE%E8%AE%A1design)
 
-笔记基于软件工程：实践者的研究方法第七版（Software Engineering: A Practitioner's Approach 7th Edition）
+笔记基于 软件工程：实践者的研究方法第七版（Software Engineering: A Practitioner's Approach 7th Edition）
 ## 软件过程(The Software Process)
 定义：一个为建造高质量软件所需要完成的活动、动作和任务的框架。
 
