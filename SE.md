@@ -199,17 +199,49 @@
 **探测器**：对所有为目标系统提供信息的传感设备的抽象。</br>
 **指示器**：表示所有指示警报条件发生的报警机械装置（例如：警报汽笛、闪灯、响铃）的抽象。</br>
 **控制器**：对允许结点发出警报或者撤销警报的机械装置的抽象。如果控制器安装在网上，那么它们应该具有相互通信的能力。</br>
-<img src="./SE/Archetypes.png" width="50%" height="50%" />
+<img src="./SE/Archetypes.png" width="33%" height="33%" />
 
 ###### 3. 将体系结构精化为构件（Refining the Architecture into Components）
 Overall architectural structure for SafeHome with top-level components
-<img src="./SE/Overall architectural structure.png" width="50%" height="50%" />
+<img src="./SE/Overall architectural structure.png" width="66%" height="66%" />
 
 ###### 4. 描述系统实例（Describing Instantiations of the System）
 An instantiation of the security function with component elaboration
-<img src="./SE/Component Elaboration.png" width="50%" height="50%" />
+<img src="./SE/Component Elaboration.png" width="66%" height="66%" />
 
 ##### 评估可选的体系结构设计
 - 体系结构权衡分析方法（Architecture Trade-Off Analysis Method, ATAM）
 - 体系结构复杂性：共享依赖、流依赖、约束依赖
-- 体系结构描述语言（Architectural Description Languages, ADL）
+- 体系结构描述语言（Architectural Description Language, ADL）
+
+##### 使用数据流进行体系结构映射
+结构设计：从数据流图到软件体系结构的映射
+1. 建立信息流的类型（the type of information flow is established）
+2. 标注流的边界（flow boundaries are indicated）
+3. 将DFD映射到程序结构（the DFD is mapped into the program structure）
+4. 定义控制层级（control hierarchy is defined）
+5. 使用设计度量和启发式精化产生的结果（the resultant structure is refined using design measures and heuristics）
+6. 求精并细化体系结构描述（the architectural description is refined and elaborated）
+
+###### 变换映射
+**步骤1：评审基本系统模型**</br>
+<img src="./SE/Fundamental System Model.png" width="50%" height="50%" />
+
+**步骤2：评审和精化软件的数据流图**</br>
+<img src="./SE/Refined System Model.png" width="50%" height="50%" />
+
+**步骤3：确认DFD是否含有变换流或事物流特征**</br>
+**步骤4：通过确定输入和输出流的边界，分离出变换中心**</br>
+**步骤5：完成“第一级分解”**</br>
+<img src="./SE/First-level Factoring.png" width="50%" height="50%" />
+
+**步骤6：完成“第二级分解”**</br>
+<img src="./SE/Second-level Factoring.png" width="50%" height="50%" />
+
+**步骤7：使用提高软件质量的设计启发式方法，精化第一次迭代得到的体系结构**</br>
+<img src="./SE/First-iteration Structure.png" width="50%" height="50%" />
+
+###### 精化体系结构设计
+<img src="./SE/Refined Program Structure.png" width="50%" height="50%"
+
+#### 构件（Component）
