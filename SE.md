@@ -113,8 +113,10 @@
 ###### 数据流图（Data Flow Diagram, DFD）
 - Context-level DFD for the SafeHome security function
 <img src="./SE/Context-level DFD.png" width="50%" height="50%" />
+
 - Level 1 DFD for the SafeHome security function
 <img src="./SE/Level 1 DFD.png" width="50%" height="50%" />
+
 - Level 2 DFD that refines the monitor sensors process
 <img src="./SE/Level 2 DFD.png" width="50%" height="50%" />
 
@@ -176,18 +178,22 @@
 ###### 1. 系统环境的表示（Representing the System in Context）
 体系结构环境图（Architectural Context Diagram, ACD）
 <img src="./SE/Architectural Context Diagram.png" width="50%" height="50%" />
+
 ###### 2. 定义原型（Defining Archetypes）
 **结点**：表示住宅安全功能的输入和输出元素的内聚集合，例如，结点可能由如下元素构成：（1）各种传感器；（2）多种警报（输出）指示器
 **探测器**：对所有为目标系统提供信息的传感设备的抽象。
 **指示器**：表示所有指示警报条件发生的报警机械装置（例如：警报汽笛、闪灯、响铃）的抽象。
 **控制器**：对允许结点发出警报或者撤销警报的机械装置的抽象。如果控制器安装在网上，那么它们应该具有相互通信的能力。
 <img src="./SE/Architectural Context Diagram.png" width="50%" height="50%" />
+
 ###### 3. 将体系结构精化为构件（Refining the Architecture into Components）
 Overall architectural structure for SafeHome with top-level components
 <img src="./SE/Overall architectural structure.png" width="50%" height="50%" />
+
 ###### 4. 描述系统实例（Describing Instantiations of the System）
 An instantiation of the security function with component elaboration
 <img src="./SE/Component Elaboration.png" width="50%" height="50%" />
+
 ##### 评估可选的体系结构设计
 - 体系结构权衡分析方法（Architecture Trade-Off Analysis Method, ATAM）
 - 体系结构复杂性：共享依赖、流依赖、约束依赖
