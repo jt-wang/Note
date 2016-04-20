@@ -50,6 +50,10 @@
           * [3\. 将体系结构精化为构件（Refining the Architecture into Components）](#3-%E5%B0%86%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%B2%BE%E5%8C%96%E4%B8%BA%E6%9E%84%E4%BB%B6refining-the-architecture-into-components)
           * [4\. 描述系统实例（Describing Instantiations of the System）](#4-%E6%8F%8F%E8%BF%B0%E7%B3%BB%E7%BB%9F%E5%AE%9E%E4%BE%8Bdescribing-instantiations-of-the-system)
         * [评估可选的体系结构设计](#%E8%AF%84%E4%BC%B0%E5%8F%AF%E9%80%89%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1)
+        * [使用数据流进行体系结构映射](#%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E6%B5%81%E8%BF%9B%E8%A1%8C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E6%98%A0%E5%B0%84)
+          * [变换映射](#%E5%8F%98%E6%8D%A2%E6%98%A0%E5%B0%84)
+          * [精化体系结构设计](#%E7%B2%BE%E5%8C%96%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1)
+      * [构件（Component）](#%E6%9E%84%E4%BB%B6component)
 
 笔记基于 软件工程：实践者的研究方法第七版（Software Engineering: A Practitioner's Approach 7th Edition）
 ## 软件过程(The Software Process)
@@ -233,7 +237,7 @@ An instantiation of the security function with component elaboration
 **步骤3：确认DFD是否含有变换流或事物流特征**</br>
 **步骤4：通过确定输入和输出流的边界，分离出变换中心**</br>
 **步骤5：完成“第一级分解”**</br>
-<img src="./SE/First-level Factoring.png" width="50%" height="50%" />
+<img src="./SE/First-level Factoring.png" width="40%" height="40%" />
 
 **步骤6：完成“第二级分解”**</br>
 <img src="./SE/Second-level Factoring.png" width="50%" height="50%" />
@@ -242,6 +246,6 @@ An instantiation of the security function with component elaboration
 <img src="./SE/First-iteration Structure.png" width="50%" height="50%" />
 
 ###### 精化体系结构设计
-<img src="./SE/Refined Program Structure.png" width="50%" height="50%"
+<img src="./SE/Refined Program Structure.png" width="50%" height="50%" />
 
 #### 构件（Component）
