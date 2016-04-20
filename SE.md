@@ -108,9 +108,9 @@
 分析建模（requirements modeling）：结构化分析（structured analysis）、面向对象分析（object-oriented analysis）
 ##### 场景模型（Scenario-based models）
 ###### 用例（Use Case）
-<img src="./SE/Formal Use Case.png" width="50%" height="50%" />
+<img src="./SE/Formal Use Case.png" width="75%" height="75%" />
 ###### 用例图（Use-case Diagram）
-<img src="./SE/Use-case Diagram.png" width="36%" height="36%" />
+<img src="./SE/Use-case Diagram.png" width="33%" height="33%" />
 ###### 活动图（Activity Diagram）
 <img src="./SE/Activity Diagram.png" width="50%" height="50%" />
 ###### 泳道图（Swimlane Diagram）
@@ -195,12 +195,11 @@
 <img src="./SE/Architectural Context Diagram.png" width="50%" height="50%" />
 
 ###### 2. 定义原型（Defining Archetypes）
-**结点**：表示住宅安全功能的输入和输出元素的内聚集合，例如，结点可能由如下元素构成：（1）各种传感器；（2）多种警报（输出）指示器
-**探测器**：对所有为目标系统提供信息的传感设备的抽象。
-**指示器**：表示所有指示警报条件发生的报警机械装置（例如：警报汽笛、闪灯、响铃）的抽象。
-**控制器**：对允许结点发出警报或者撤销警报的机械装置的抽象。如果控制器安装在网上，那么它们应该具有相互通信的能力。
-
-<img src="./SE/Architectural Context Diagram.png" width="50%" height="50%" />
+**结点**：表示住宅安全功能的输入和输出元素的内聚集合，例如，结点可能由如下元素构成：（1）各种传感器；（2）多种警报（输出）指示器</br>
+**探测器**：对所有为目标系统提供信息的传感设备的抽象。</br>
+**指示器**：表示所有指示警报条件发生的报警机械装置（例如：警报汽笛、闪灯、响铃）的抽象。</br>
+**控制器**：对允许结点发出警报或者撤销警报的机械装置的抽象。如果控制器安装在网上，那么它们应该具有相互通信的能力。</br>
+<img src="./SE/Archetypes.png" width="50%" height="50%" />
 
 ###### 3. 将体系结构精化为构件（Refining the Architecture into Components）
 Overall architectural structure for SafeHome with top-level components
