@@ -159,3 +159,36 @@
 - 构件级设计元素
 - 部署级设计元素
 
+#### 体系结构
+定义：程序或计算系统的软件体系结构是指系统的一个或者多个结构，它包括软件构件、构件的外部可见属性以及它们之间的相互关系。
+##### 体系结构风格（Architecture Styles）
+###### 以数据为中心的体系结构（Data-centered architectures）
+![Data-centered architecture](./SE/Data-centered architecture.png)
+###### 数据流体系结构（Data-flow architectures）
+![Data-flow architectures](./SE/Data-flow architectures.png)
+###### 调用和返回体系结构（Call and return architectures）
+主程序／子程序体系结构（Main program/subprogram architecture）
+![Main program_subprogram architecture](./SE/Main program_subprogram architecture.png)
+###### 面向对象体系结构（Object-oriented architectures）
+###### 层次体系结构（Layered architectures）
+![Layered architecture](./SE/Layered architecture.png)
+##### 体系结构设计（Architecture Design）
+###### 1. 系统环境的表示（Representing the System in Context）
+体系结构环境图（Architectural Context Diagram, ACD）
+![Architectural Context Diagram](./SE/Architectural Context Diagram.png)
+###### 2. 定义原型（Defining Archetypes）
+**结点**：表示住宅安全功能的输入和输出元素的内聚集合，例如，结点可能由如下元素构成：（1）各种传感器；（2）多种警报（输出）指示器
+**探测器**：对所有为目标系统提供信息的传感设备的抽象。
+**指示器**：表示所有指示警报条件发生的报警机械装置（例如：警报汽笛、闪灯、响铃）的抽象。
+**控制器**：对允许结点发出警报或者撤销警报的机械装置的抽象。如果控制器安装在网上，那么它们应该具有相互通信的能力。
+![Architectural Context Diagram](./SE/Architectural Context Diagram.png)
+###### 3. 将体系结构精化为构件（Refining the Architecture into Components）
+Overall architectural structure for SafeHome with top-level components
+![Overall architectural structure](./SE/Overall architectural structure.png)
+###### 4. 描述系统实例（Describing Instantiations of the System）
+An instantiation of the security function with component elaboration
+![Component Elaboration](./SE/Component Elaboration.png)
+##### 评估可选的体系结构设计
+- 体系结构权衡分析方法（Architecture Trade-Off Analysis Method, ATAM）
+- 体系结构复杂性：共享依赖、流依赖、约束依赖
+- 体系结构描述语言（Architectural Description Languages, ADL）
