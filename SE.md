@@ -51,21 +51,21 @@
 
 ### 惯用过程模型（Prescriptive Process Models）
 #### 瀑布模型（The Waterfall Model）
-![The waterfall model](./SE/The waterfall model.png)
+<img src="./SE/The waterfall model.png" width="50%" height="50%" />
 #### 增量过程模型（Incremental Process Models）
-![The incremental model](./SE/The incremental model.png)
+<img src="./SE/The incremental model.png" width="50%" height="50%" />
 #### 演化过程模型（Evolutionary Process Models）
 ##### 原型开发（Prototyping）
 <img src="./SE/The prototyping paradigm.png" width="50%" height="50%" />
 ##### 螺旋模型（The Spiral Model）
-![The spiral model](./SE/The spiral model.png)
+<img src="./SE/The spiral model.png" width="50%" height="50%" />
 
 ### 统一过程（the Unified Process）
-![the Unified Process](./SE/the Unified Process.png)
+<img src="./SE/the Unified Process.png" width="50%" height="50%" />
 
 ### 敏捷过程（Agile Process）
 #### 极限编程（Extreme Programming (XP)）
-![The Extreme Programming process](./SE/The Extreme Programming process.png)
+<img src="./SE/The Extreme Programming process.png" width="50%" height="50%" />
 #### 其他敏捷过程模型
 - 自适应软件开发（Adaptive Software Development (ASD)）
 - Scrum
@@ -95,36 +95,36 @@
 分析建模（requirements modeling）：结构化分析（structured analysis）、面向对象分析（object-oriented analysis）
 ##### 场景模型（Scenario-based models）
 ###### 用例（Use Case）
-![Formal Use Case](./SE/Formal Use Case.png)
+<img src="./SE/Formal Use Case.png" width="50%" height="50%" />
 ###### 用例图（Use-case Diagram）
-![Use-case Diagram](./SE/Use-case Diagram.png)
+<img src="./SE/Use-case Diagram.png" width="50%" height="50%" />
 ###### 活动图（Activity Diagram）
-![Activity Diagram](./SE/Activity Diagram.png)
+<img src="./SE/Activity Diagram.png" width="50%" height="50%" />
 ###### 泳道图（Swimlane Diagram）
-![Swimlane Diagram](./SE/Swimlane Diagram.png)
+<img src="./SE/Swimlane Diagram.png" width="50%" height="50%" />
 ##### 数据模型（Data models）
 实体－关系图（Entity-Relationship Diagrams）
 ##### 面向类的模型（Class-oriented models）
 ###### 类图（Class diagram）
-![Class Diagram](./SE/Class Diagram.png)
+<img src="./SE/Class Diagram.png" width="50%" height="50%" />
 ###### 类－职责－协作者建模（Class-Responsibility-Collaborator Modeling, CRC）
-![CRC](./SE/CRC.png)
+<img src="./SE/CRC.png" width="50%" height="50%" />
 ##### 面向流程的模型（Flow-oriented models）
 ###### 数据流图（Data Flow Diagram, DFD）
 - Context-level DFD for the SafeHome security function
-![Context-level DFD](./SE/Context-level DFD.png)
+<img src="./SE/Context-level DFD.png" width="50%" height="50%" />
 - Level 1 DFD for the SafeHome security function
-![Level 1 DFD](./SE/Level 1 DFD.png)
+<img src="./SE/Level 1 DFD.png" width="50%" height="50%" />
 - Level 2 DFD that refines the monitor sensors process
-![Level 2 DFD](./SE/Level 2 DFD.png)
+<img src="./SE/Level 2 DFD.png" width="50%" height="50%" />
 
 ###### 状态图（State Diagram）
-![State Diagram](./SE/State Diagram1.png)
+<img src="./SE/State Diagram1.png" width="50%" height="50%" />
 ##### 行为模型（Behavioral models）
 ###### 状态图（State Diagram）
-![State Diagram](./SE/State Diagram2.png)
+<img src="./SE/State Diagram2.png" width="50%" height="50%" />
 ###### 顺序图（Sequence Diagram）
-![Sequence Diagram](./SE/Sequence Diagram.png)
+<img src="./SE/Sequence Diagram.png" width="50%" height="50%" />
 
 #### 分析模式（Analysis Pattern）
 定义：分析模式在特定应用领域内提供了一些解决方案（如类、功能、行为），在为许多应用项目建模时可以重复使用。
@@ -163,31 +163,31 @@
 定义：程序或计算系统的软件体系结构是指系统的一个或者多个结构，它包括软件构件、构件的外部可见属性以及它们之间的相互关系。
 ##### 体系结构风格（Architecture Styles）
 ###### 以数据为中心的体系结构（Data-centered architectures）
-![Data-centered architecture](./SE/Data-centered architecture.png)
+<img src="./SE/Data-centered architecture.png" width="50%" height="50%" />
 ###### 数据流体系结构（Data-flow architectures）
-![Data-flow architectures](./SE/Data-flow architectures.png)
+<img src="./SE/Data-flow architectures.png" width="50%" height="50%" />
 ###### 调用和返回体系结构（Call and return architectures）
 主程序／子程序体系结构（Main program/subprogram architecture）
-![Main program_subprogram architecture](./SE/Main program_subprogram architecture.png)
+<img src="./SE/Main program_subprogram architecture.png" width="50%" height="50%" />
 ###### 面向对象体系结构（Object-oriented architectures）
 ###### 层次体系结构（Layered architectures）
-![Layered architecture](./SE/Layered architecture.png)
+<img src="./SE/Layered architecture.png" width="50%" height="50%" />
 ##### 体系结构设计（Architecture Design）
 ###### 1. 系统环境的表示（Representing the System in Context）
 体系结构环境图（Architectural Context Diagram, ACD）
-![Architectural Context Diagram](./SE/Architectural Context Diagram.png)
+<img src="./SE/Architectural Context Diagram.png" width="50%" height="50%" />
 ###### 2. 定义原型（Defining Archetypes）
 **结点**：表示住宅安全功能的输入和输出元素的内聚集合，例如，结点可能由如下元素构成：（1）各种传感器；（2）多种警报（输出）指示器
 **探测器**：对所有为目标系统提供信息的传感设备的抽象。
 **指示器**：表示所有指示警报条件发生的报警机械装置（例如：警报汽笛、闪灯、响铃）的抽象。
 **控制器**：对允许结点发出警报或者撤销警报的机械装置的抽象。如果控制器安装在网上，那么它们应该具有相互通信的能力。
-![Architectural Context Diagram](./SE/Architectural Context Diagram.png)
+<img src="./SE/Architectural Context Diagram.png" width="50%" height="50%" />
 ###### 3. 将体系结构精化为构件（Refining the Architecture into Components）
 Overall architectural structure for SafeHome with top-level components
-![Overall architectural structure](./SE/Overall architectural structure.png)
+<img src="./SE/Overall architectural structure.png" width="50%" height="50%" />
 ###### 4. 描述系统实例（Describing Instantiations of the System）
 An instantiation of the security function with component elaboration
-![Component Elaboration](./SE/Component Elaboration.png)
+<img src="./SE/Component Elaboration.png" width="50%" height="50%" />
 ##### 评估可选的体系结构设计
 - 体系结构权衡分析方法（Architecture Trade-Off Analysis Method, ATAM）
 - 体系结构复杂性：共享依赖、流依赖、约束依赖
