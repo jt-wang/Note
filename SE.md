@@ -56,7 +56,7 @@
 ![The incremental model](./SE/The incremental model.png)
 #### 演化过程模型（Evolutionary Process Models）
 ##### 原型开发（Prototyping）
-![The prototyping paradigm](./SE/The prototyping paradigm.png)
+<img src="./SE/The prototyping paradigm.png" width="200px" height="200px" />
 ##### 螺旋模型（The Spiral Model）
 ![The spiral model](./SE/The spiral model.png)
 
