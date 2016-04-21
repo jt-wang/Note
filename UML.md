@@ -2,16 +2,25 @@
 
 笔记基于 UML用户指南（第2版）（The Unified Modeling Language User Guide 2nd Edition）
 
-## 基础
+## 建模
 - 模型是对现实的简化
 - 建模是为了能够更好地理解正在开发的系统
 - UML是一种对软件密集型系统的制品进行下述工作的语言：可视化、详述、构造、文档化
+### 建模技术
+- 对系统的词汇建模
+- 对系统中的职责分布建模：MVC
+- 对简单类型建模：Boolean
 
 ## UML的构造块（Building Blocks of the UML）
 ### 事物（Things）
 #### 结构事物（Structural things）
 ##### 类（class）
 ![class](./UML/class.png)
+- 名称（name）：简单名、限定名 `java::awt::Rectangle`
+- 属性（attribute）
+- 操作（operation）
+- 职责（responsibility）
+
 ##### 接口（interface）
 ![interface](./UML/interface.png)
 ##### 协作（collaboration）
@@ -46,14 +55,24 @@
 
 ### 关系（Relationships）
 #### 依赖（dependency）
+使用关系：精化、跟踪和绑定<br />
 ![dependency](./UML/dependency.png)
 #### 关联（association）
+结构关系<br />
 ![association](./UML/association.png)
-#### 泛化（generalization）
-特殊／一般关系</br>
+##### 名称（association names）
+![association names](./UML/association names.png)
+##### 角色（association end names (role names)）
+![association end names](./UML/association end names.png)
+##### 多重性（multiplicity）
+![multiplicity](./UML/multiplicity.png)
+##### 聚合（aggregation, "has-a"）
+![aggregation](./UML/aggregation.png)
+#### 泛化（generalization, "is-a-kind-of"）
+特殊／一般关系<br />
 ![generalization](./UML/generalization.png)
 #### 实现（realization）
-接口和实现它们的类或构件之间；用况和实现它们的协作之间</br>
+接口和实现它们的类或构件之间；用况和实现它们的协作之间<br />
 ![realization](./UML/realization.png)
 
 ### 图（Diagrams）
@@ -74,7 +93,7 @@
 ## UML中的公共机制（Common Mechanisms in the UML）
 ### 详述（Specifications）
 ### 修饰（Adornments）
-抽象；可见性：公共、受保护、私有</br>
+抽象；可见性：公共、受保护、私有<br />
 ![adornments](./UML/adornments.png)
 ### 通用划分（Common divisions）
 类和对象；接口和实现；类型和角色
