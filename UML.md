@@ -11,12 +11,15 @@
 - 对系统的词汇建模
 - 对系统中的职责分布建模：MVC
 - 对简单类型建模：Boolean
+- 对注释建模![modeling comments](./UML/modeling comments.png)
+- 对新特征建模![modeling new properties](./UML/modeling new properties.png)
+- 对新语义建模![modeling new semantics](./UML/modeling new semantics.png)
 
 ## UML的构造块（Building Blocks of the UML）
 ### 事物（Things）
 #### 结构事物（Structural things）
 ##### 类（class）
-![class](./UML/class.png)
+<img src="./UML/class.png" width="50%" height="50%" />
 - 名称（name）：简单名、限定名 `java::awt::Rectangle`
 - 属性（attribute）
 - 操作（operation）
@@ -52,6 +55,7 @@
 
 #### 注释事物（Annotational things）
 ##### 注解（note）
+文字、文档链接、URL<br />
 ![note](./UML/note.png)
 
 ### 关系（Relationships）
@@ -103,9 +107,10 @@
 #### 衍型（stereotype）
 如：`class Overflow`
 #### 标记值（tagged value）
-如：`class EventQueue`
+如：`name = value`
 #### 约束（constraint）
-如：`{ordered}`
+如：`{ordered}` <br />
+![constraint](./UML/constraint.png)
 
 ## 体系结构（Architecture）
 ![architecture](./UML/architecture.png)
