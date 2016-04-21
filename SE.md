@@ -220,6 +220,7 @@ An instantiation of the security function with component elaboration
 
 ##### 使用数据流进行体系结构映射
 结构设计：从数据流图到软件体系结构的映射
+
 1. 建立信息流的类型（the type of information flow is established）
 2. 标注流的边界（flow boundaries are indicated）
 3. 将DFD映射到程序结构（the DFD is mapped into the program structure）
@@ -237,10 +238,10 @@ An instantiation of the security function with component elaboration
 **步骤3：确认DFD是否含有变换流或事物流特征**</br>
 **步骤4：通过确定输入和输出流的边界，分离出变换中心**</br>
 **步骤5：完成“第一级分解”**</br>
-<img src="./SE/First-level Factoring.png" width="40%" height="40%" />
+<img src="./SE/First-level Factoring.png" width="36%" height="36%" />
 
 **步骤6：完成“第二级分解”**</br>
-<img src="./SE/Second-level Factoring.png" width="50%" height="50%" />
+<img src="./SE/Second-level Factoring.png" width="45%" height="45%" />
 
 **步骤7：使用提高软件质量的设计启发式方法，精化第一次迭代得到的体系结构**</br>
 <img src="./SE/First-iteration Structure.png" width="50%" height="50%" />
