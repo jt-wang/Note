@@ -297,7 +297,6 @@ public abstract class EventHandler {
 #### 实例（instance）
 - 实例是抽象的具体表现；对象是类的实例
 - 一个实例有一个类型（具体的类目）；实例的类目通常是静态的
-- 
 
 ## UML中的公共机制（Common Mechanisms in the UML）
 ### 详述（Specifications）
