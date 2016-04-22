@@ -24,7 +24,7 @@
 ### 事物（Things）
 #### 结构事物（Structural things）
 ##### 类（class）
-<img src="./UML/class.png" width="50%" height="50%" />
+![class](./UML/class.png)
 - 名称（name）：简单名、限定名 `java::awt::Rectangle`
 - 属性（attribute）：`[visibility] name [':' type]['[' multiplicity ']']['=' initial-value][property-string {',' property-string}]`
     - `origin`                  Name only
