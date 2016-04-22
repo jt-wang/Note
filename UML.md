@@ -24,7 +24,7 @@
 ### 事物（Things）
 #### 结构事物（Structural things）
 ##### 类（class）
-![class](./UML/class.png)
+<img src="./UML/class.png" width="36%" height="36%" />
 - 名称（name）：简单名、限定名 `java::awt::Rectangle`
 - 属性（attribute）：`[visibility] name [':' type]['[' multiplicity ']']['=' initial-value][property-string {',' property-string}]`
     - `origin`                  Name only
@@ -86,15 +86,15 @@
 
 #### 注释事物（Annotational things）
 ##### 注解（note）
-文字、文档链接、URL<br />
+文字、文档链接、URL<br>
 ![note](./UML/note.png)
 
 ### 关系（Relationships）
 #### 依赖（dependency）
-使用关系：精化、跟踪和绑定<br />
+使用关系：精化、跟踪和绑定<br>
 ![dependency](./UML/dependency.png)
 #### 关联（association）
-结构关系<br />
+结构关系<br>
 ![association](./UML/association.png)
 ##### 名称（association names）
 ![association names](./UML/association names.png)
@@ -105,10 +105,10 @@
 ##### 聚合（aggregation, "has-a"）
 ![aggregation](./UML/aggregation.png)
 #### 泛化（generalization, "is-a-kind-of"）
-特殊／一般关系<br />
+特殊／一般关系<br>
 ![generalization](./UML/generalization.png)
 #### 实现（realization）
-接口和实现它们的类或构件之间；用况和实现它们的协作之间<br />
+接口和实现它们的类或构件之间；用况和实现它们的协作之间<br>
 ![realization](./UML/realization.png)
 
 ### 图（Diagrams）
@@ -138,9 +138,9 @@
 ##### 用法
 - 对系统的词汇建模
 - 对简单协作建模
-- 对逻辑数据库模式建模
+- 对逻辑数据库模式建模<br>
 ![modeling a schema](./UML/modeling a schema.png)
-- 正向工程（forward engineering）：把模型转换成代码
+- 正向工程（forward engineering）：把模型转换成代码<br>
 ![forward engineering](./UML/forward engineering.png)
 ```java
 public abstract class EventHandler {
@@ -169,7 +169,7 @@ public abstract class EventHandler {
 ## UML中的公共机制（Common Mechanisms in the UML）
 ### 详述（Specifications）
 ### 修饰（Adornments）
-抽象；可见性：公共、受保护、私有<br />
+抽象；可见性：公共、受保护、私有<br>
 ![adornments](./UML/adornments.png)
 ### 通用划分（Common divisions）
 类和对象；接口和实现；类型和角色
@@ -180,7 +180,7 @@ public abstract class EventHandler {
 #### 标记值（tagged value）
 如：`name = value`
 #### 约束（constraint）
-如：`{ordered}` <br />
+如：`{ordered}` <br>
 ![constraint](./UML/constraint.png)
 
 ## 体系结构（Architecture）
