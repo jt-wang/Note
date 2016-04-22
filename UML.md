@@ -11,11 +11,11 @@
 ### 建模技术
 - 对系统中的职责分布建模：MVC
 - 对简单类型建模：Boolean
-- 对注释建模
+- 对注释建模<br>
 ![modeling comments](./UML/modeling comments.png)
-- 对新特征建模
+- 对新特征建模<br>
 ![modeling new properties](./UML/modeling new properties.png)
-- 对新语义建模
+- 对新语义建模<br>
 ![modeling new semantics](./UML/modeling new semantics.png)
 - 对系统的不同视图建模
 - 对不同的抽象层次建模
@@ -42,13 +42,13 @@
         - 并发（concurrent）：通过把操作原子化，来保证在出现多控制流的情况下对象的语义和完整性
         - 静态（static）：操作没有关于目标对象的隐式参数，它的行为如同传统的全局过程
 - 职责（responsibility）
-- 可见性（visibility）
+- 可见性（visibility）<br>
 ![visibility](./UML/visibility.png)
-- 拥有者范围（owner scope）
+- 拥有者范围（owner scope）<br>
 ![owner scope](./UML/owner scope.png)
-- 抽象元素、叶子元素和多态性元素（abstract, leaf, and polymorphic elements）
+- 抽象元素、叶子元素和多态性元素（abstract, leaf, and polymorphic elements）<br>
 ![abstract, leaf, and polymorphic elements](./UML/abstract, leaf, and polymorphic elements.png)
-- 多重性（multiplicity）
+- 多重性（multiplicity）<br>
 ![class multiplicity](./UML/class multiplicity.png)
 - 标准衍型
     - 元类（metaclass）：一个对象全是类的类目
