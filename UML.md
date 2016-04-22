@@ -6,14 +6,19 @@
 - 模型是对现实的简化
 - 建模是为了能够更好地理解正在开发的系统
 - UML是一种对软件密集型系统的制品进行下述工作的语言：可视化、详述、构造、文档化
+- 系统表示正在开发的事物，通过不用的模型从不同的角度对系统进行观察，并以图的形式来表示这些视图。
 
 ### 建模技术
-- 对系统的词汇建模
 - 对系统中的职责分布建模：MVC
 - 对简单类型建模：Boolean
-- 对注释建模![modeling comments](./UML/modeling comments.png)
-- 对新特征建模![modeling new properties](./UML/modeling new properties.png)
-- 对新语义建模![modeling new semantics](./UML/modeling new semantics.png)
+- 对注释建模
+![modeling comments](./UML/modeling comments.png)
+- 对新特征建模
+![modeling new properties](./UML/modeling new properties.png)
+- 对新语义建模
+![modeling new semantics](./UML/modeling new semantics.png)
+- 对系统的不同视图建模
+- 对不同的抽象层次建模
 
 ## UML的构造块（Building Blocks of the UML）
 ### 事物（Things）
@@ -21,9 +26,35 @@
 ##### 类（class）
 <img src="./UML/class.png" width="50%" height="50%" />
 - 名称（name）：简单名、限定名 `java::awt::Rectangle`
-- 属性（attribute）
-- 操作（operation）
+- 属性（attribute）：`[visibility] name [':' type]['[' multiplicity ']']['=' initial-value][property-string {',' property-string}]`
+    - `origin`                  Name only
+    - `+ origin`                Visibility and name
+    - `name : String[0..1]`     Name, type, and multiplicity
+    - `origin : Point = (0,0)`  Name, type, and initial value
+    - `id: Integer {readonly}`  Name and property
+- 操作（operation）：`[visibility] name ['(' parameter-list ')'][':' return-type][property-string {',' property-string}]`
+    - 特性（property）
+        - 叶子（leaf）：没有任何子类
+        - 抽象（abstract）：没有任何直接的实例
+        - 查询（query）：操作的执行不会改变系统的状态
+        - 顺序（sequential）：调用者必须在对象外部进行协调，以保证在对象中一次仅有一个流
+        - 监护（guarded）：通过将所有对象监护操作的所有调用顺序化，来保证在出现多控制流的情况下对象的语义和完整性
+        - 并发（concurrent）：通过把操作原子化，来保证在出现多控制流的情况下对象的语义和完整性
+        - 静态（static）：操作没有关于目标对象的隐式参数，它的行为如同传统的全局过程
 - 职责（responsibility）
+- 可见性（visibility）
+![visibility](./UML/visibility.png)
+- 拥有者范围（owner scope）
+![owner scope](./UML/owner scope.png)
+- 抽象元素、叶子元素和多态性元素（abstract, leaf, and polymorphic elements）
+![abstract, leaf, and polymorphic elements](./UML/abstract, leaf, and polymorphic elements.png)
+- 多重性（multiplicity）
+![class multiplicity](./UML/class multiplicity.png)
+- 标准衍型
+    - 元类（metaclass）：一个对象全是类的类目
+    - 幂类型（powertype）：一个对象是给定父类的子类的类目
+    - 衍型（stereotype）：一个可用于其他元素的衍型的类目
+    - 实用程序（utility）：一个属性和操作都是静态范围的类
 
 ##### 接口（interface）
 ![interface](./UML/interface.png)
@@ -81,7 +112,47 @@
 ![realization](./UML/realization.png)
 
 ### 图（Diagrams）
+结构图（Structural Diagrams）：
+- 类图（类、接口、协作）
+- 构件图（构件）
+- 组合结构图（内部结构）
+- 对象图（对象）
+- 制品图（制品）
+- 部署图（结点）
+
+行为图（Behavioral Diagrams）：
+- 用况图：组织系统的行为
+- 顺序图：注重消息的时间次序
+- 通信图：注重收发消息的对象的结构组织
+- 状态图：注重由事件驱动的系统状态变化
+- 活动图：注重从活动到活动的控制流
+
 #### 类图（class diagram）
+![class diagram 1](./UML/class diagram 1.png)
+##### 内容
+- 类
+- 接口
+- 依赖、泛化和关联关系
+- 注解和约束
+
+##### 用法
+- 对系统的词汇建模
+- 对简单协作建模
+- 对逻辑数据库模式建模
+![modeling a schema](./UML/modeling a schema.png)
+- 正向工程（forward engineering）：把模型转换成代码
+![forward engineering](./UML/forward engineering.png)
+```java
+public abstract class EventHandler {
+    EventHandler successor;
+    private Integer currentEventID;
+    private String source;
+
+    EventHandler() {}
+    public void handleRequest() {}
+}
+```
+
 #### 对象图（object diagram）
 #### 构件图（component diagram）
 #### 组合结构图（composite structure diagram）
