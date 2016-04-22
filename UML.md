@@ -19,12 +19,13 @@
 ![modeling new semantics](./UML/modeling new semantics.png)
 - 对系统的不同视图建模
 - 对不同的抽象层次建模
+- 对关系网建模：结构关系 --> 一般／特殊关系 --> 依赖关系
 
 ## UML的构造块（Building Blocks of the UML）
 ### 事物（Things）
 #### 结构事物（Structural things）
 ##### 类（class）
-<img src="./UML/class.png" width="36%" height="36%" />
+<img src="./UML/class.png" width="30%" height="30%" />
 - 名称（name）：简单名、限定名 `java::awt::Rectangle`
 - 属性（attribute）：`[visibility] name [':' type]['[' multiplicity ']']['=' initial-value][property-string {',' property-string}]`
     - `origin`                  Name only
@@ -58,6 +59,9 @@
 
 ##### 接口（interface）
 ![interface](./UML/interface.png)
+类型（type）是类的一个衍型，用于描述一组对象的域以及作用于对象的操作。
+角色（role）是一个参与特定语境的实体的行为。
+
 ##### 协作（collaboration）
 ![collaboration](./UML/collaboration.png)
 ##### 用况（use case）
@@ -91,22 +95,68 @@
 
 ### 关系（Relationships）
 #### 依赖（dependency）
-使用关系：精化、跟踪和绑定<br>
 ![dependency](./UML/dependency.png)
+衍型
+- 类和对象之间
+    - 绑定（bind）：源用给定的实际参数实例化目标模版；绑定包括一个映射到模版的形式参数的实际参数列表
+    - 导出（derive）：可以从目标计算出源
+    - 允许（permit）：源对目标给予特定的可见性（例如 C++ 中的 friend 类）
+    - 的实例（instanceOf）：源对象是目标类目的一个实例
+    - 实例化（instantiate）：源创建目标的实例
+    - 幂类型（powertype）：目标是源的幂类型
+    - 精化（refine）：源比目标处于更精细的抽象程度上
+    - 使用（use）：源元素的语义依赖于目标元素的公共部分的语义
+- 包之间
+    - 引入（import）：目标包中的公共内容加入到源包的公共命名空间中
+    - 访问（access）：目标包中的公共内容加入到源包的私有命名空间中
+- 用况之间
+    - 延伸（extend）：目标用况扩展了源用况的行为
+    - 包含（include）：源用况在源所指定的位置上显式地合并了另一个用况的行为
+- 对象之间
+    - 发送（send）：源类把事件发送给目标
+- 系统
+    - 跟踪（trace）：目标是源的早期开发阶段的祖先
+
 #### 关联（association）
-结构关系<br>
 ![association](./UML/association.png)
+结构关系<br>
+约束
+- 有序（ordered）：关联一端的对象集是显式有序的
+- 集合（set）：对象唯一，不可以重复
+- 袋（bag）：对象不唯一，可以重复
+- 有序集合（order set）：对象唯一且有序
+- 表（list）或序列（sequence）：对象有序但可以重复
+- 只读（readonly）：一旦从关联的另一端的对象添加了一个链，就不可以修改或删除
+
 ##### 名称（association names）
 ![association names](./UML/association names.png)
 ##### 角色（association end names (role names)）
 ![association end names](./UML/association end names.png)
 ##### 多重性（multiplicity）
-![multiplicity](./UML/multiplicity.png)
+![association multiplicity](./UML/association multiplicity.png)
 ##### 聚合（aggregation, "has-a"）
 ![aggregation](./UML/aggregation.png)
+##### 导航（navigation）
+![association navigation](./UML/association navigation.png)
+##### 可见性（visibility）
+![association visibility](./UML/association visibility.png)
+##### 限定（qualification）
+![association qualification](./UML/association qualification.png)
+##### 组合（composition）
+强拥有关系（整体与部分的生命周期是一致的）<br>
+![association composition](./UML/association composition.png)
+##### 关联类（association classes）
+![association classes](./UML/association classes.png)
+
 #### 泛化（generalization, "is-a-kind-of"）
-特殊／一般关系<br>
 ![generalization](./UML/generalization.png)
+特殊／一般关系；多继承<br>
+约束
+- 完全（complete）：已经在模型中给出了泛化关系中的所有子类，不允许再有更多的子类（一些子类可能在图中省略；省略和模型的完整性不同）
+- 不完全（incomplete）：没有给出泛化中的所有子类，允许再添加子类
+- 互斥（disjoint）：父类的对象最多以给定的子类中的一个子类作为类型（只应用于多继承语境中）
+- 重叠（overlapping）：父类的对象可能以给定的子类中的一个以上子类作为类型（只应用于多继承语境中）
+
 #### 实现（realization）
 接口和实现它们的类或构件之间；用况和实现它们的协作之间<br>
 ![realization](./UML/realization.png)
