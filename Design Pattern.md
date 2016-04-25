@@ -14,6 +14,7 @@
 - 针对接口编程，不针对实现编程
 - 尽量在交互对象之间使用松耦合设计
 - 对扩展开放，对修改关闭
+- 依赖倒置原则（Dependency Inversion Principle）：要依赖抽象，不要依赖具体类
 
 ## OO 模式
 ### 策略模式（Strategy Pattern）
@@ -36,3 +37,12 @@
 ![Java I/O](/Design Pattern/Java I_O.png)
 
 ### 工厂模式（Factory Pattern）
+所有的工厂都是用来封装对象的创建
+#### 简单工厂（Simple Factory）
+![Simple Factory](/Design Pattern/Simple Factory.png)
+#### 工厂方法模式（Factory Method Pattern）
+定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。<br>
+![Factory Method Pattern](/Design Pattern/Factory Method Pattern.png)
+#### 抽象工厂模式（Abstract Factory Pattern）
+提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。<br>
+![Abstract Factory Pattern](/Design Pattern/Abstract Factory Pattern.png)
