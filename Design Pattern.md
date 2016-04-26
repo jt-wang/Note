@@ -17,10 +17,10 @@
 - 依赖倒置原则（Dependency Inversion Principle）：要依赖抽象，不要依赖具体类
 
 ## OO 模式
-### 策略模式（Strategy Pattern）
+### 策略模式（The Strategy Pattern）
 定义算法族，分别封装起来，让它们之间可以相互替换，此模式让算法的变化独立于使用算法的客户。
 
-### 观察者模式（Observer Pattern）
+### 观察者模式（The Observer Pattern）
 定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并自动更新。<br>
 ![Observer Pattern](/Design Pattern/Observer Pattern.png)
 #### Java 中的观察者模式
@@ -29,20 +29,72 @@
 - 在调用`notifyObservers()`之前，要先调用`setChanged()`来指示状态已经改变
 - Swing 大量使用观察者模式
 
-### 装饰者模式（Decorator Pattern）
+### 装饰者模式（The Decorator Pattern）
 动态地将责任附加到对象上。若要扩展功能，装饰者提供了比继承更有弹性的替代方案。<br>
-利用装饰者模式，常常造成设计中有大量的小类。<br>
+缺点：利用装饰者模式，常常造成设计中有大量的小类。<br>
 ![Decorator Pattern](/Design Pattern/Decorator Pattern.png)
 #### Java I/O
 ![Java I/O](/Design Pattern/Java I_O.png)
 
-### 工厂模式（Factory Pattern）
+### 工厂模式（The Factory Pattern）
 所有的工厂都是用来封装对象的创建
 #### 简单工厂（Simple Factory）
 ![Simple Factory](/Design Pattern/Simple Factory.png)
-#### 工厂方法模式（Factory Method Pattern）
+#### 工厂方法模式（The Factory Method Pattern）
 定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。<br>
 ![Factory Method Pattern](/Design Pattern/Factory Method Pattern.png)
-#### 抽象工厂模式（Abstract Factory Pattern）
+#### 抽象工厂模式（The Abstract Factory Pattern）
 提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。<br>
 ![Abstract Factory Pattern](/Design Pattern/Abstract Factory Pattern.png)
+
+### 单例模式（The Singleton Pattern）
+确保一个类只有一个实例，并提供一个全局访问点。<br>
+在Java中实现单例模式需要私有的构造器、一个静态方法和一个静态变量。
+#### 简单但低效的多线程版本
+``` java
+public class Singleton {
+	private static Singleton uniqueInstance;
+
+	private Singleton() {}
+
+	public static synchronized Singleton getInstance() {
+		if (uniqueInstance == null) {
+			uniqueInstance = new Singleton();
+		}
+		return uniqueInstance;
+	}
+}
+```
+#### 不用延迟实例化（lazy instantiaze）的版本
+``` java
+public class Singleton {
+	private static Singleton uniqueInstance = new Singleton();
+
+	private Singleton() {}
+
+	public static Singleton getInstance() {
+		return uniqueInstance;
+	}
+}
+```
+#### “双重检查加锁”版本
+``` java
+public class Singleton {
+	private volatile static Singleton uniqueInstance;
+
+	private Singleton() {}
+
+	public static Singleton getInstance() {
+		if (uniqueInstance == null) {
+			synchronized (Singleton.class) {
+				if (uniqueInstance == null) {
+					uniqueInstance = new Singleton();
+				}
+			}
+		}
+		return uniqueInstance;
+	}
+}
+```
+
+### 命令模式（The Command Pattern）
