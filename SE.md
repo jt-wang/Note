@@ -68,7 +68,7 @@
 
 ### 惯用过程模型（Prescriptive Process Models）
 #### 瀑布模型（The Waterfall Model）
-<img src="./SE/The waterfall model.png" width="50%" height="50%" />
+![The waterfall model](./SE/The waterfall model.png)
 #### 增量过程模型（Incremental Process Models）
 <img src="./SE/The incremental model.png" width="50%" height="50%" />
 #### 演化过程模型（Evolutionary Process Models）
@@ -250,3 +250,6 @@ An instantiation of the security function with component elaboration
 <img src="./SE/Refined Program Structure.png" width="50%" height="50%" />
 
 #### 构件（Component）
+定义：系统中模块化的、可部署的和可替换的部件，该部件封装了实现并暴露一组接口。
+- 在面向对象的软件工程环境中，构件包括一组协作的类
+- 在传统软件工程环境中，一个构件就是程序的一个功能要素。
