@@ -70,7 +70,7 @@
 #### 瀑布模型（The Waterfall Model）
 <img src="./SE/The waterfall model.png" width="50%" height="50%" />
 #### 增量过程模型（Incremental Process Models）
-<img src="./SE/The incremental model.png" width="75%" height="75%" />
+<img src="./SE/The incremental model.png" width="50%" height="50%" />
 #### 演化过程模型（Evolutionary Process Models）
 ##### 原型开发（Prototyping）
 <img src="./SE/The prototyping paradigm.png" width="40%" height="40%" />
