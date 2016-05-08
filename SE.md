@@ -68,17 +68,17 @@
 
 ### 惯用过程模型（Prescriptive Process Models）
 #### 瀑布模型（The Waterfall Model）
-<img src="./SE/The waterfall model.png" width="75%" height="75%" />
+![The waterfall model](./SE/The waterfall model.png)
 #### 增量过程模型（Incremental Process Models）
-<img src="./SE/The incremental model.png" width="75%" height="75%" />
+![The incremental model](./SE/The incremental model.png)
 #### 演化过程模型（Evolutionary Process Models）
 ##### 原型开发（Prototyping）
-<img src="./SE/The prototyping paradigm.png" width="40%" height="40%" />
+![The prototyping paradigm](./SE/The prototyping paradigm.png)
 ##### 螺旋模型（The Spiral Model）
-<img src="./SE/The spiral model.png" width="50%" height="50%" />
+![The spiral model](./SE/The spiral model.png)
 
 ### 统一过程（the Unified Process）
-<img src="./SE/the Unified Process.png" width="40%" height="40%" />
+![the Unified Process](./SE/the Unified Process.png)
 
 ### 敏捷过程（Agile Process）
 #### 极限编程（Extreme Programming (XP)）
