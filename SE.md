@@ -37,7 +37,7 @@
     * [设计（Design）](#%E8%AE%BE%E8%AE%A1design)
       * [设计概念](#%E8%AE%BE%E8%AE%A1%E6%A6%82%E5%BF%B5)
       * [设计模型](#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9E%8B)
-      * [体系结构](#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84)
+      * [体系结构（Architecture）](#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84architecture)
         * [体系结构风格（Architecture Styles）](#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BCarchitecture-styles)
           * [以数据为中心的体系结构（Data\-centered architectures）](#%E4%BB%A5%E6%95%B0%E6%8D%AE%E4%B8%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84data-centered-architectures)
           * [数据流体系结构（Data\-flow architectures）](#%E6%95%B0%E6%8D%AE%E6%B5%81%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84data-flow-architectures)
@@ -61,6 +61,27 @@
           * [耦合性](#%E8%80%A6%E5%90%88%E6%80%A7)
         * [设计传统构件](#%E8%AE%BE%E8%AE%A1%E4%BC%A0%E7%BB%9F%E6%9E%84%E4%BB%B6)
         * [基于构件的开发](#%E5%9F%BA%E4%BA%8E%E6%9E%84%E4%BB%B6%E7%9A%84%E5%BC%80%E5%8F%91)
+      * [用户界面设计（User Interface Design）](#%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1user-interface-design)
+        * [黄金规则](#%E9%BB%84%E9%87%91%E8%A7%84%E5%88%99)
+          * [1\. 用户操纵控制](#1-%E7%94%A8%E6%88%B7%E6%93%8D%E7%BA%B5%E6%8E%A7%E5%88%B6)
+          * [2\. 减少用户记忆负担](#2-%E5%87%8F%E5%B0%91%E7%94%A8%E6%88%B7%E8%AE%B0%E5%BF%86%E8%B4%9F%E6%8B%85)
+          * [3\. 保持界面一致](#3-%E4%BF%9D%E6%8C%81%E7%95%8C%E9%9D%A2%E4%B8%80%E8%87%B4)
+        * [可用性](#%E5%8F%AF%E7%94%A8%E6%80%A7)
+        * [用户界面的分析与设计](#%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1)
+      * [基于模式的设计](#%E5%9F%BA%E4%BA%8E%E6%A8%A1%E5%BC%8F%E7%9A%84%E8%AE%BE%E8%AE%A1)
+        * [模式的种类](#%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%A7%8D%E7%B1%BB)
+          * [模式的类型](#%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%B1%BB%E5%9E%8B)
+        * [框架](#%E6%A1%86%E6%9E%B6)
+        * [体系结构模式](#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E6%A8%A1%E5%BC%8F)
+      * [WebApp设计](#webapp%E8%AE%BE%E8%AE%A1)
+        * [WebApp设计质量](#webapp%E8%AE%BE%E8%AE%A1%E8%B4%A8%E9%87%8F)
+        * [设计目标](#%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87)
+        * [WebApp设计金字塔](#webapp%E8%AE%BE%E8%AE%A1%E9%87%91%E5%AD%97%E5%A1%94)
+        * [体系结构设计](#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1)
+        * [导航设计](#%E5%AF%BC%E8%88%AA%E8%AE%BE%E8%AE%A1)
+        * [面向对象的超媒体设计方法（Object\-Oriented Hypermedia Design Method）](#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%B6%85%E5%AA%92%E4%BD%93%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95object-oriented-hypermedia-design-method)
+  * [质量管理（Quality Management）](#%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86quality-management)
+    * [质量概念（Quality Concepts）](#%E8%B4%A8%E9%87%8F%E6%A6%82%E5%BF%B5quality-concepts)
 
 笔记基于 软件工程：实践者的研究方法第七版（Software Engineering: A Practitioner's Approach 7th Edition）
 ## 软件过程(The Software Process)
@@ -395,3 +416,13 @@ CBSE成功的一些关键因素：
 简单性、一致性、符合性、健壮性、导航性、视觉吸引、兼容性
 ##### WebApp设计金字塔
 ![Design pyramid for WebApps](./SE/Design pyramid for WebApps.png)
+##### 体系结构设计
+![WebApp MVC Architecture](./SE/WebApp MVC Architecture.png)
+##### 导航设计
+导航语义：导航语义单元（Navigation Semantic Unit, NSU）——导航路径、导航链接和节点<br>
+导航语法：单独的导航链接；水平导航条；垂直导航条；标签；网站地图
+##### 面向对象的超媒体设计方法（Object-Oriented Hypermedia Design Method）
+![Summary of the OOHDM method](./SE/Summary of the OOHDM method.png)
+
+## 质量管理（Quality Management）
+### 质量概念（Quality Concepts）
