@@ -387,3 +387,11 @@ CBSE成功的一些关键因素：
 - 持久性：如果数据在创建它的进程运行结束之后仍然要存在，则数据是持久的
     - 数据库管理系统（DatabaseManagementSystem）
     - 应用级持久性（Application Level Persistence）
+
+#### WebApp设计
+##### WebApp设计质量
+可用性（Usability）、功能性、可靠性、效率、可维护性、安全性、可用性（Availability）、可伸缩性、投放市场时间
+##### 设计目标
+简单性、一致性、符合性、健壮性、导航性、视觉吸引、兼容性
+##### WebApp设计金字塔
+![Design pyramid for WebApps](./SE/Design pyramid for WebApps.png)
