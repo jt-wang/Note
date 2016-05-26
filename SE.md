@@ -469,3 +469,22 @@ CBSE成功的一些关键因素：
 - 项目管理技术
 - 质量控制
 - 质量保证
+
+### 评审技术（Review Techniques）
+#### 软件缺陷
+- 错误（error）：软件交付给最终用户之前发现的质量问题
+- 缺陷（defect）：软件交付给最终用户之后发现的质量问题
+
+缺陷放大模型（Defect amplification model）
+![Defect amplification model](./SE/Defect amplification model.png)
+有评审的缺陷放大
+![Defect amplification--reviews conducted](./SE/Defect amplification--reviews conducted.png)
+
+#### 评审度量
+进行评审需要的工作量、评审中发现的错误类型和严重程度
+#### 正式程度
+##### 非正式评审（Informal Reviews）
+与同事就软件工程产品进行的简单桌面检查；以评审一个工作产品为目的的临时会议；结对编程评审（持续的桌面检查）
+##### 正式技术评审（Formal Technical Reviews）
+FTR包括走查（walkthrough）和审查（inspection）<br>
+评审会议；评审报告和记录保存（建立跟踪规程）；样本驱动评审
