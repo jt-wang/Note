@@ -465,10 +465,26 @@ CBSE成功的一些关键因素：
 解决投诉、产品退货和更换、帮助作业支持、与保修工作相关的人力成本；不良的声誉和由此产生的业务损失
 
 #### 实现软件质量
-- 软件工程方法
-- 项目管理技术
-- 质量控制
-- 质量保证
+##### 软件工程方法
+##### 项目管理技术
+##### 质量控制
+##### 软件质量保证（Software Quality Assurance, SQA）
+###### 软件质量保证的要素
+- 标准
+- 评审和审核
+- 测试
+- 错误／缺陷的收集和分析
+- 变更管理
+- 教育
+- 供应商管理
+- 安全管理
+- 安全
+- 风险管理
+
+###### 软件质量保证的目标和度量
+![Software quality goals, attributes, and metrics](./SE/Software quality goals, attributes, and metrics.png)
+###### 工作产品
+在建模、编码阶段，主要的SQA工作产品是技术评审的输出；在测试阶段，主要的SQA工作产品是制定的测试计划和测试规程。
 
 ### 评审技术（Review Techniques）
 #### 软件缺陷
@@ -477,6 +493,7 @@ CBSE成功的一些关键因素：
 
 缺陷放大模型（Defect amplification model）
 ![Defect amplification model](./SE/Defect amplification model.png)
+
 有评审的缺陷放大
 ![Defect amplification--reviews conducted](./SE/Defect amplification--reviews conducted.png)
 
