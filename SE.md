@@ -492,8 +492,10 @@ CBSE成功的一些关键因素：
 ##### 软件工程方法
 ##### 项目管理技术
 ##### 质量控制
-##### 软件质量保证（Software Quality Assurance, SQA）
-###### 软件质量保证的要素
+##### 质量保证
+
+### 软件质量保证（Software Quality Assurance, SQA）
+#### 软件质量保证的要素
 - 标准
 - 评审和审核
 - 测试
@@ -505,9 +507,9 @@ CBSE成功的一些关键因素：
 - 安全
 - 风险管理
 
-###### 软件质量保证的目标和度量
+#### 软件质量保证的目标和度量
 ![Software quality goals, attributes, and metrics](./SE/Software quality goals, attributes, and metrics.png)
-###### 工作产品
+#### 工作产品
 在建模、编码阶段，主要的SQA工作产品是技术评审的输出；在测试阶段，主要的SQA工作产品是制定的测试计划和测试规程。
 
 ### 评审技术（Review Techniques）
@@ -529,3 +531,16 @@ CBSE成功的一些关键因素：
 ##### 正式技术评审（Formal Technical Reviews）
 FTR包括走查（walkthrough）和审查（inspection）<br>
 评审会议；评审报告和记录保存（建立跟踪规程）；样本驱动评审
+
+### 软件测试（Software Testing）
+#### 软件测试策略
+##### 软件测试的策略性方法
+###### 验证与确认（Verification and Validation, V&V）
+###### 软件测试的组织
+独立测试组（Independent Test Group, ITG）
+###### 软件测试策略——宏观
+测试策略<br>
+![Testing strategy](./SE/Testing strategy.png)
+
+软件测试步骤<br>
+![Software testing steps](./SE/Software testing steps.png)
